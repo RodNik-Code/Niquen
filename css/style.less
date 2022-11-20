@@ -1,0 +1,52 @@
+// compress: true
+@import "vars";
+
+html {
+   font-size: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: @black;
+    background: #0000001f;
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Block */
+@import "blocks/container";
+@import "blocks/btn";
+@import "blocks/work";
+@import "blocks/about";
+@import "blocks/footer";
+@import "blocks/form";
+@import "blocks/burger";
+@import "blocks/card.less";
+@import "blocks/twobject.less";
+@import "blocks/logst.less";
+@import "blocks/hatneed.less";
+@import "blocks/regist.less";
+@import "blocks/shop.less";
+@import "blocks/chekerpage.less";
+@import "blocks/profilpage.less";
+@import "blocks/transaktions.less";
+
+/* Helpers */
+@import "helpers";

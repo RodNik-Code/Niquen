@@ -1,0 +1,588 @@
+// main: ../style.less
+.assemblero
+{
+    border-radius: 10px;
+    background: rgba(0,239,140,0.21);
+    border-top: 1px solid rgba(255,255,255,0.014);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 5px 25px rgb(0 0 0 / 10%);
+    min-width: 1000px;
+}
+.masiv
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    margin-top: 0px;
+    height: 423px;
+    width: 1000px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 40px;
+    border-radius: 10px 10px 10px 10px;
+    background: @gray;
+    border-top: 1px solid rgba(255, 255, 255, 0.014);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 5px 25px rgb(0 0 0 / 10%);
+    @media @mobile {
+          /* margin-top: 50px; */
+          margin: 0px 20px 20px 20px;
+    max-width: none;
+    min-width: 0;
+    width: auto;
+    height: auto;
+    padding: 20px 10px 0px 10px;
+    flex-direction: column;
+        }
+}
+.mobcar
+{
+    display: none;
+    width: 324px;
+    height: 79px;
+    margin-bottom: 20px;
+    background: rgba(124,253,199,0.88);
+    @media @mobile{
+        display: flex;
+        border-radius: 10px;
+    }
+    
+}
+.mobcar:hover
+{
+    height: 258px;
+}
+.mobcar:hover .mobcardetail .contenthide a
+{
+    visibility: visible;
+}
+.mobcar:hover .mobcardetail p
+{
+    display: inline;
+}
+.mobcarimg
+{
+    position: relative;
+ 
+    height: 100%;
+
+
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
+    //overflow: hidden;
+}
+.mobcarimg img
+{
+    max-width: 130px;
+    transition: 0.5s ease-in-out;
+    margin-top: -24px;
+}
+.mobcardetail
+{
+    //display: flex;
+   // justify-content: center;
+    //flex-direction: column;
+    //align-items: center;
+    padding: 17px 0px 0px 20px;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+}
+.mobcardetail h3
+{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.3em;
+    line-height: 1em;
+    margin-bottom: 10px;
+    padding: 0px 0px 0px 10px;
+}
+.mobcardetail p
+{
+    color: black;
+    display: none;
+    /* text-align: justify; */
+    font-weight: 500;
+    font-size: .8em;
+    /* line-height: 1em; */
+    padding: 0px 0px 0px 0px;
+}
+.mobcardetail .order
+{
+
+    padding: 5px 21px;
+    background: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    border-radius: 10px;
+    display: inline;
+}
+.mobcar:hover .mobcardetail .order
+{
+   display: none;
+
+}
+.mobcar:hover .contenthide 
+{
+    visibility: visible;
+    transition: 0.0s ease-in-out;
+    
+}
+.contenthide 
+{
+    //position: absolute; 
+    /* display: flex; */
+    justify-content: center;
+    flex-direction: column;
+    /* float: right; */
+     //padding: 20px;
+    visibility: hidden;
+    margin: 30px 13px -2px -114px;
+}
+.contenthide h4
+{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1em;
+}
+.contenthide .months
+{
+    display: flex;
+    gap: 10px;
+    padding-inline-start: 0px;
+}
+.contenthide .months li
+{
+    list-style: none;
+    color: black;
+    font-size: 0.9em;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    opacity: 1;
+    cursor: pointer;
+    //transition: 0.5s;
+}
+.contenthide .months li:hover
+{
+    color: white;
+    background: black;
+    opacity: 1;
+}
+ .contenthide .grup
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+ .contenthide .grup h2
+{
+    color: black;
+    font-weight: 600;
+    font-size: 2em;
+}
+ .contenthide .grup h2 sup
+{
+    font-weight: 600;
+    color: black;
+}
+ .contenthide .grup h2 small
+{
+    font-size: 0.75em;
+}
+ .contenthide .grup a
+{
+    display: inline-flex;
+    padding: 10px 11px;
+    background: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    border-radius: 10px;
+    visibility: hidden;
+}
+.masivo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    margin-top: -15px;
+    height: 423px;
+    width: 1000px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 40px;
+    border-radius: 10px;
+    background: #362c3d;
+    border-top: 1px solid rgba(255,255,255,0.014);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 5px 25px rgb(0 0 0 / 10%);
+    @media @mobile {
+      display: none;
+        }
+
+}
+.textor
+{
+    margin-top: 138px;
+}
+.textor h2
+{
+    color: black;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 4em;
+    margin-bottom: 10px;
+    @media @mobile {
+        font-size: 2em;
+          }
+}
+
+.shopcard
+{
+    position: relative;
+    width: 300px;
+    height: 380px;
+    border-radius: 10px;
+  
+    border-top: 1px solid rgba(255, 255, 255, 0.014);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    @media @mobile {
+        display: none;
+    }
+}
+.shopcard:hover
+{
+    width: 600px;
+}
+.shopcard .shopimg
+{
+    position: relative;
+    min-width: 300px;
+    height: 100%;
+
+    background:rgba(205 205 205);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 2;
+}
+.shopcard .shopimg img
+{
+    max-width: 296px;
+    transition: 0.5s ease in out;
+}
+.shopcard .shopdetail
+{
+    position: absolute;
+    left: 0;
+    min-width: 300px;
+    height:  100%;
+    background: rgba(124,253,199,0.88);
+        border-top: 1px solid rgba(255, 255, 255, 0.014);
+        backdrop-filter: blur(15px);
+       
+        
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+}
+.shopcard:hover .shopdetail
+{
+    left: 300px;
+}
+
+.shopcard .shopdetail::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid @black;
+}
+.shopcard .shopdetail h3
+{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 1em;
+}
+.shopcard .shopdetail h3 span
+{
+    font-size: 0.65em;
+    font-weight: 300;
+    text-transform: none;
+    opacity: 0.85;
+}
+.shopcard .shopdetail h4
+{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1em;
+}
+.shopcard .shopdetail p
+{
+    color: black;
+    opacity: 0.85;
+    font-size: 0.8em;
+}
+.shopcard .shopdetail .months
+{
+    display: flex;
+    gap: 10px;
+    padding-inline-start: 0px;
+}
+.shopcard .shopdetail  .months li
+{
+    list-style: none;
+    color: black;
+    font-size: 0.9em;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.shopcard .shopdetail .months li:hover
+{
+    color: white;
+    background: black;
+    opacity: 1;
+}
+ .grup
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+ .grup h2
+{
+    color: black;
+    font-weight: 600;
+    font-size: 2em;
+}
+ .grup h2 sup
+{
+    font-weight: 600;
+    color: black;
+}
+ .grup h2 small
+{
+    font-size: 0.75em;
+}
+ .grup a
+{
+    display: inline-flex;
+    padding: 10px 11px;
+    background: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    border-radius: 10px;
+}
+.shopcardo
+{
+    position: relative;
+    max-width: 206px;
+    border-radius: 10px;
+    border-top: 1px solid rgba(255,255,255,0.014);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 5px 25px rgb(0 0 0 / 10%);
+    display: flex;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+.shopcardo:hover
+{
+   max-width: 500px;
+}
+.shopcardo .shopimgo
+{
+    position: relative;
+    background: rgba(205 205 205);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    z-index: 2;
+}
+.shopcardo .shopimgo img
+{
+    max-width: 207px;
+    transition: 0.5s ease in out;
+}
+.shopcardo .shopdetailo
+{
+        /* position: absolute; */
+        left: 0;
+        /* min-width: 6px; */
+        background: rgba(124,253,199,0.88);
+        height: 289px;
+        /* background: rgba(0,239,140,0.21); */
+        border-top: 1px solid rgba(255,255,255,0.014);
+        backdrop-filter: blur(15px);
+        /* display: flex; */
+        /* justify-content: center; */
+        /* flex-direction: column; */
+        padding: 20px;
+        z-index: 1;
+        transition: .5s ease-in-out;
+}
+.shopcardo:hover .shopdetailo
+{
+    left: 300px;
+}
+
+.shopcardo .shopdetailo::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid @black;
+}
+.shopcardo .shopdetailo h3
+{
+    color: black;
+    text-transform: uppercase;
+    /* text-align: center; */
+    font-weight: 600;
+    font-size: 1.1em;
+    line-height: 1em;
+}
+.shopcardo .shopdetailo h3 span
+{
+    font-size: .65em;
+    font-weight: 300;
+    text-transform: none;
+    opacity: .85;
+}
+.shopcardo .shopdetailo h4
+{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .8em;
+    margin-top: 9px;
+    /* margin-bottom: 2px; */
+    margin-bottom: 4px;
+    line-height: 1em;
+}
+.shopcardo .shopdetailo p
+{
+    color: black;
+    opacity: 0.85;
+    font-size: .8em;
+     
+}
+.shopcardo .shopdetailo .monthso
+{
+    display: flex;
+    gap: 10px;
+    padding-inline-start: 0px;
+}
+.shopcardo .shopdetailo  .monthso li
+{
+    list-style: none;
+    color: black;
+    font-size: .9em;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    opacity: 1;
+    cursor: pointer;
+    transition: .5s;
+}
+.shopcardo .shopdetailo .monthso li:hover
+{
+    color: white;
+    background: black;
+    opacity: 1;
+}
+.grupo
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+ .grupo h2
+{
+    color: black;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+ .grupo h2 sup
+{
+    font-weight: 600;
+    color: black;
+}
+ .grupo h2 small
+{
+    font-size: 0.75em;
+}
+ .grupo a
+{
+    display: inline-flex;
+    padding: 10px 10px;
+    background: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    border-radius: 10px;
+}

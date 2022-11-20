@@ -1,0 +1,274 @@
+// main: ../style.less
+.bodus
+{
+    margin: 140px 0px 0px 51px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+
+}
+
+.app
+{
+    position: absolute;
+    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.app:hover
+{
+    background: green;
+    color: black;
+}
+.app ion-icon
+{
+    margin-right: 10px;
+    font-size: 1.4em;
+} 
+.contentBx
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.contentBx .texto
+{
+    max-width: 800px;
+    
+}
+.contentBx .texto h2
+{
+    font-size: 6em;
+
+    color: @black;
+}
+.contentBx .texto p
+{
+    font-size: 1.1em;
+    color: @gray;
+    line-height: 1.8em;
+}
+.contentBx .texto h4
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333;
+}
+.btn1
+{
+    background: @gray;
+    color:@white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.1em;
+    margin: 5px 20px 5px 0;
+    border-radius: 5px;
+}
+.btn1 ion-icon
+{
+    margin-right: 10px;
+    font-size: 1.4em;
+}
+.imgBx img
+{
+    margin-left: 161px;
+    max-width: 517px;
+    display: none;
+   
+}
+.imgBx img.active
+{
+    display: block;
+}
+
+.dots
+{
+    //position: absolute;
+//top: 36%;
+    //transform: translateY(-19%);
+   // right:  400px;
+// display: flex;
+    //flex-direction: column;
+
+    position: absolute;
+    left: 50%;
+    bottom: 156px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.dots .dot
+{
+    position: relative;
+    //width: 47px;
+    width: 10px;
+    height: 30px;
+    background:#252426;
+    opacity: .2;
+    //display: inline-flex;
+    margin: 5px;
+
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+   
+    cursor: pointer;
+    border-radius: 10px;
+}
+.dots .dot.active
+{
+  background: #252426;  
+  opacity: 1;
+}
+.sci
+{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+}
+.sci li
+{
+    list-style: none;
+    margin-right: 20px;
+}
+.sci li a
+{
+    font-size: 1.8em;
+    color: @gray;
+}
+.sci li a:hover
+{
+    color: @black;
+}
+.butoni
+{
+    display: inline-block;
+    vertical-align: top;
+    padding: 1.05em 1.7em;
+    min-width: 170px;
+    background-color: @gray;
+    box-shadow: 2px 2px 10px fade(#000, 24%);
+    color: rgb(0 239 140);
+    border-color: @black;
+    border-radius: 1.8em;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.06rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color .2s linear,color .2s linear,box-shadow .2s linear,border-color .2s linear;   
+    &:hover {
+        border: 1px solid #362c3d;
+        background: none;
+        color: #252426;
+    }
+}
+.chek
+{
+    display: none;
+}
+
+@media (max-width:991px)
+{
+    .bodus
+    {
+        margin: 0px 15px 0px 15px;
+    }
+    header
+    {
+        padding: 30px;
+        justify-content: space-between;
+    }
+    .main 
+    {
+        padding: 30px;
+        background: @white;
+    }
+    .app
+    {
+        display: none;
+    }
+    .contentBx
+    {
+        flex-direction: column-reverse;
+        margin: 100px 0;
+    }
+    .imgBx img 
+    {
+        max-width: 300px;
+        margin: 0;
+    }
+    .dots
+    {
+        position: relative;
+        top: initial;
+        transform: none;
+        right: initial;
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        left: 0%;
+        bottom: 0;
+    }
+    .dots .dot
+    {
+        width: 25px;
+        height: 10px;
+        background: @black;
+        opacity: 0.2;
+        border-radius: 10px;
+        margin: 0px 10px 0px 10px;
+    }
+    .dots .dot.active
+    {
+        background: @black;
+        opacity: 1;
+    }
+    .contentBx .texto
+    {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .contentBx .texto h2
+    {
+        font-size: 3em;
+        display: none;
+    }
+    .sci
+    {
+        position: absolute;
+        bottom: 30px;
+        display: flex;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .chek
+    {
+        display: inline;
+    }
+    .chek h2
+    {
+        font-size: 40px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
